@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+position:relative;
+animation:mymove 2s infinite;
+border-radius: 50px;
+-webkit-animation:mymove 2s infinite; /* Safari and Chrome */
+}
+
+@keyframes mymove
+{
+0%   {top:0px;left:0px;background-color: #070;}
+25%  {top:200px; left:400px; background-color: #007;}
+50%  {top:150px; left: 200px; }
+75%  {top:200px; left:300px; background-color: #700;}
+100% {top:50px;left:800px;background-color: #ff0;}
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+0%   {top:0px;}
+25%  {top:200px;}
+75%  {top:50px}
+100% {top:100px;}
+}
+</style>
+</head>
+<body>
+
+
+
+<div></div>
+
+</body>
+</html>
